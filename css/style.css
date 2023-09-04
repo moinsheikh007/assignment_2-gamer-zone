@@ -35,6 +35,8 @@ section {
     max-width: 1200px;
 }
 
+/* ====== Header section ===== */
+
 .header {
     position: sticky;
     width: 100%;
@@ -95,3 +97,115 @@ section {
 }
 
 
+/* ======== Home Section ====== */
+
+.home {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.homeBox h3 {
+    font-size: 4.4rem;
+    letter-spacing: 5px;
+    color: var(--black);
+    margin-bottom: 2rem;
+}
+.homeBox h1 {
+    font-size: 8rem;
+    letter-spacing: .7rem;
+    font-weight: 700;
+}
+
+.homeBox .icon2 i, span{
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    margin-right: .9rem;
+    cursor: pointer;
+}
+
+.home .homeImg img {
+    width: 100%;
+}
+
+.home .homeImg:hover img {
+    transform: scale(.9);
+}
+
+.btn {
+    margin-top: 3rem;
+    margin-right: 2rem;
+    background-color: var(--main-color);
+    color: var(--white);
+    padding: 1.5rem 2.5rem;
+    border-radius: .5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: var(--black);
+}
+
+.btn2 {
+    background-color: var(--white);
+    color: var(--black);
+    border: var(--border);
+}
+.btn2:hover {
+    background-color: var(--black);
+    color: var(--white);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ======== Media Query For Mobile Device ====== */
+
+@media screen and (max-width: 991px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .home {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .homeBox {
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+}
