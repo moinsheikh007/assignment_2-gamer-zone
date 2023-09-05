@@ -8,7 +8,7 @@
     outline: none;
     text-decoration: none;
     text-transform: capitalize;
-    transition: all 0.5s ease;
+    /* transition: all 0.5s ease; */
 }
 
 :root {
@@ -230,6 +230,37 @@ section {
     padding: 1rem .5rem;
 }
 
+/* ===== Instant game section ===== */
+
+.instant {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+}
+.instant .insText {
+    text-align: right;
+    width: 70%;
+    margin-top: 5rem;
+}
+.instant .insText h2{
+    font-size: 4rem;
+    line-height: 5.5rem;
+    margin-bottom: 2rem;
+    font-weight: 700;
+}
+.instant .insText p {
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+.instant .insImg {
+    margin-top: 5rem;
+}
+
+.instant .insImg img {
+    width: 100%;
+}
 
 
 
@@ -292,6 +323,14 @@ section {
         padding: 0 2rem;
     }
     
+    .instant {
+        display: flex;
+        flex-direction: column;
+    }
+    .instant .insText {
+        width: 100%;
+        text-align: center;
+    }
 
 }
 
