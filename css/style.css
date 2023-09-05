@@ -263,6 +263,55 @@ section {
 }
 
 
+/* ===== Career Container ===== */
+.careerContainer {
+    
+    background: url("/images/Group\ 14.png"), var(--black) no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: color;
+    background-attachment: fixed;
+}
+
+.career {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: center;
+    justify-content: flex-start;
+    gap: 3rem;
+}
+.career .careerText {
+    color: var(--white);
+}
+.career .careerText h2 {
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+}
+.career .careerText p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    padding-right: 4rem;
+    line-height: 1.5;
+}
+.double {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.double .one {
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+.double .two {
+    text-align: right;
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+.career .careerImg img {
+    width: 100%;
+}
+
+
 
 
 
@@ -330,6 +379,18 @@ section {
     .instant .insText {
         width: 100%;
         text-align: center;
+    }
+
+    .career {
+        display: flex;
+        flex-direction: column;
+    }
+    .career .careerText {
+        padding: 1rem 2rem;
+        text-align: center;
+    }
+    .double .one {
+        text-align: left;
     }
 
 }
