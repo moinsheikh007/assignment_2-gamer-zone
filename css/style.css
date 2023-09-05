@@ -265,12 +265,14 @@ section {
 
 /* ===== Career Container ===== */
 .careerContainer {
-    
+    margin-top: 7rem;
     background: url("/images/Group\ 14.png"), var(--black) no-repeat;
     background-position: center;
     background-size: cover;
     background-blend-mode: color;
     background-attachment: fixed;
+    margin-bottom: 7rem;
+    padding: 3rem 0;
 }
 
 .career {
@@ -309,6 +311,91 @@ section {
 }
 .career .careerImg img {
     width: 100%;
+}
+
+/* ======= Action Section ====== */
+
+.action {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 1rem;
+    align-content: center;
+    justify-content: center;
+}
+.action .actionBox {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem; 
+}
+.action .actionBox:hover{
+    border: 2px solid #2c3e50;
+    border-radius: 50px;
+}
+.action .actionBox img {
+    width: 30%;
+}
+
+footer {
+    background-color: var(--black);
+    color: var(--white);
+    margin-top: 7rem;
+    padding: 2rem;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5;
+    align-items: center;
+    gap: 3rem;
+}
+.footer .logo span {
+    color: var(--white);
+}
+
+.footer .story {
+    display: flex;
+    cursor: pointer;
+}
+.footer .story h5 {
+    padding: 0 3rem;
+    font-size: 1.8rem;
+}
+
+.footer .social {
+    display: flex;
+    cursor: pointer;
+}
+
+.footer .social i {
+    padding: 1rem ;
+    font-size: 3rem;
+    margin: 0 5px;
+}
+.footer .social i:hover {
+    transform: translateX(5px);
+}
+
+.footer .link {
+    display: flex;
+}
+.footer .link a {
+    display: inline-block;
+    font-size: 1.5rem;
+    color: var(--white);
+    padding: 0 2rem;
+}
+
+.footer .link a:hover {
+    transform: translateX(5px);
+}
+footer h4 {
+    text-align: center;
+    font-size: 1.6rem;
+    letter-spacing: 2px;
+    font-weight: 600;
+    padding-bottom: 2rem;
 }
 
 
@@ -392,6 +479,29 @@ section {
     .double .one {
         text-align: left;
     }
+    .action {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .footer .story {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 6rem;
+        justify-content: space-between;
+    }
+    .footer .story h5  {
+        padding: 0;
+    }
+    .footer .social {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 3rem;
+    }
+    .header {
+       display: flex;
+       flex-direction: column;
+       position: static;
+    }
 
 }
 
@@ -399,4 +509,6 @@ section {
     html {
         font-size: 50%;
     }
+
+    
 }
